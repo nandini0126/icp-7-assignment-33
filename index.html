@@ -7,8 +7,26 @@
 </head>
 <body>
     <script>
-        const letters=['a','b','c','d','e','f']
-        
+        const letters=['a','b','c','d','e','f'];
+        console.log(`array:${letters}`);
+        console.log(`length of array is ${letters.length}`);
+        console.log(`element on index 3 is ${letters[3]}`);
+        letters.push('g');
+        console.log(`after push: ${letters}`);
+        letters.pop();
+        console.log(`after pop: ${letters}`);
+        letters.unshift('A');
+        console.log(`after unshift: ${letters}`);
+        letters.shift();
+        console.log(`after shift: ${letters}`);
+        letters.splice(2,2,'C','D');
+        console.log(`splice result: ${letters}`);
+        console.log(letters.join("#"));
+        console.log(`Reverse array: ${letters.reverse()}`);
+        console.log(`Sorted array: ${letters.sort()}`);
+        console.log(`index of letter e is ${letters.indexOf("e")}`);
+        console.log(`is there is letter 'f' present in array: ${letters.includes('f')}`);
+        console.log(`is there is letter 'z' present in array: ${letters.includes('z')}`)
     </script>
 </body>
 </html>
